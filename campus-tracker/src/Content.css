@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap'); 
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+
+.body1 {
+    position: relative;
+    background: #EEEEEE;
+    min-height: 90vh;
+    border: solid 1px rgb(241, 47, 255);
+    box-shadow: 0px 1px 5px rgb(180, 180, 180);
+    padding-top: 72px;
+}
+
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    color: black;
+    min-height: 90vh;
+    position: relative;
+}
+
+.text-container {
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    z-index: 2;
+}
+
+.text-container h1 {
+    font-size: 6rem;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    position: relative;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    text-align: left;
+    z-index: 5;
+}
+
+.highlight {
+    color: #3B1E54;
+}
+
+.text-container p {
+    font-size: 1rem;
+    color: rgb(32, 32, 32);
+    margin-top: 15px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+
+.start-btn {
+    margin-top: 25px;
+    padding: 14px 30px;
+    font-size: 1rem;
+    background: linear-gradient(to right, #9B7EBD, #D4BEE4);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.15s ease-out;
+    display: inline-block;  
+    width: auto;           
+    text-align: center;
+}
+
+.start-btn:hover {
+    transform: scale(1.1);
+}
+
+
+.grid-container {
+    display: flex; /* Change to flex to fix layout issues */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    margin: 0 auto; /* Center content */
+    max-width: 1200px;
+    width: 100%;
+}
+
+.text-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(241, 52, 255);
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    height: auto; /* Remove fixed height */
+    font-size: 30px;
+    font-weight: bold;
+    padding: 30px;
+    box-shadow: 0px 3px 8px rgb(176, 176, 176);
+    text-align: center;
+    margin: 20px auto;
+}
+
+
+
+::selection {
+    background: #9B7EBD;
+    color: white;
+}
+
+::-moz-selection {
+    background: #9B7EBD;
+    color: white;
+}
+
+.text-box h5 {
+    color: rgb(0, 0, 0);
+    font-weight: normal;
+    font-weight: 100px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    font-family: "Crimson Text";
+}
+
+
