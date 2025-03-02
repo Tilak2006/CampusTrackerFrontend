@@ -1,7 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: "/", // 👈 This ensures Vite builds correctly for Vercel
+  build: {
+    outDir: "dist" // Optional, but it's the default Vercel build folder
+  }
 })
