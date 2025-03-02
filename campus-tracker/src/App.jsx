@@ -6,27 +6,24 @@ import Contact from "./Contact";
 import Login from "./Login";
 import About from "./About";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { GoogleOAuthProvider } from "@react-oauth/google";
+
+const GOOGLE_CLIENT_ID = "YOUR_GOOGLE_CLIENT_ID"; // Replace with your client ID
+
 function App() {
   return (
-    <>
-      
-<BrowserRouter>
-<Navbar />
-    <Routes>
-  
-      <Route path="/" element={
-      
-      <Content/>
-      
-        
-      } />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
-    </Routes>
-    <Footer />
-</BrowserRouter></>
+    <GoogleOAuthProvider clientId={GOOGLE_CLIENT_ID}>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Content />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </GoogleOAuthProvider>
   );
 }
 
