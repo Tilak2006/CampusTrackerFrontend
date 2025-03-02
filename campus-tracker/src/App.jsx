@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import Contact from "./Contact";
 import Login from "./Login";
 import About from "./About";
+import Event from "./Event";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
           <Route path="/about" element={<About />} />
+          <Route path="/events" element={<Event />} />
         </Routes>
         <Footer />
       </BrowserRouter>
