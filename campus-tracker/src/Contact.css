@@ -1,0 +1,104 @@
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    font-family: "Poppins", sans-serif;
+  }
+  
+
+  .contact-card {
+    display: flex;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    width: 500px;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+
+  .contact-left {
+    flex: 1;
+    padding-right: 30px;
+  }
+  
+  .contact-left h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group input,
+  .input-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    outline: none;
+    transition: 0.3s;
+  }
+  
+  .input-group input:focus,
+  .input-group textarea:focus {
+    border-color: #E39FF6;
+    box-shadow: 0 0 8px #E39FF6;
+  }
+  
+  input::placeholder,
+  textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+ 
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    background: linear-gradient(90deg, #E39FF6, #B075D3);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(227, 159, 246, 0.4);
+  }
+  
+ 
+
+  
+
+  .success-message {
+    background: rgba(0, 255, 0, 0.2);
+    color: #90ee90;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  
+  
+ 
+ 
+    .contact-left {
+      padding-right: 0;
+    }
+  
+    .contact-right {
+      display: none; /* Hide illustration on small screens */
+    }
