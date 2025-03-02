@@ -1,0 +1,32 @@
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    background: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .about-content {
+    max-width: 700px;
+    background: #eaeaea;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    border: 2px solid #9b59b6;
+  }
+  
+  .about-content h1 {
+    font-size: 3rem;
+    color: #3a1d5f;
+    margin-bottom: 1rem;
+  }
+  
+  .about-content p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  

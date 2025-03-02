@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Login.css"; 
+import GoogleAuth from "./GoogleAuth";
 
 
 const Login = () => {
@@ -11,7 +12,9 @@ const Login = () => {
     console.log("Email:", email);
     console.log("Password:", password);
   };
-
+  const handleGoogleLogin = () => {
+    console.log("Google login clicked");
+  };
   return (
     <div className="login-container">
       <form className="login-form" onSubmit={handleSubmit}>

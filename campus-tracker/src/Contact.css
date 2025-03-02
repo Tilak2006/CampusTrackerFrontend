@@ -10,13 +10,13 @@
 
   .contact-card {
     display: flex;
-    background: rgba(255, 255, 255, 0.2);
+    background: #3B1E54;
     backdrop-filter: blur(15px);
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     width: 500px;
-    color: white;
+    color: #3B1E54;
     border: 1px solid rgba(255, 255, 255, 0.3);
     animation: fadeIn 1s ease-in-out;
   }
@@ -28,6 +28,7 @@
   }
   
   .contact-left h2 {
+    color: #EEEEEE;
     font-size: 28px;
     margin-bottom: 20px;
     font-weight: 600;
@@ -36,8 +37,13 @@
   
   .input-group {
     margin-bottom: 15px;
+    border: 1px solid #3B1E54;
+    border-radius: 10px;
+    color: #3B1E54;
   }
-  
+  .input-group input{
+    background: #3B1E54;
+  }
   .input-group input,
   .input-group textarea {
     width: 100%;
@@ -45,7 +51,7 @@
     font-size: 16px;
     border: none;
     border-radius: 8px;
-    background: rgba(255, 255, 255, 0.15);
+    background: #3B1E54;
     color: white;
     border: 1px solid rgba(255, 255, 255, 0.3);
     outline: none;
@@ -56,6 +62,7 @@
   .input-group textarea:focus {
     border-color: #E39FF6;
     box-shadow: 0 0 8px #E39FF6;
+    border: 1px solid #3B1E54;
   }
   
   input::placeholder,
