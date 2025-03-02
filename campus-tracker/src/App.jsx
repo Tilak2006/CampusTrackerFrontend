@@ -8,7 +8,7 @@ import About from "./About";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 
-const GOOGLE_CLIENT_ID = "YOUR_GOOGLE_CLIENT_ID"; // Replace with your client ID
+const GOOGLE_CLIENT_ID = "315887135987-i66k90cfdln8etgir50phi6fom7fl9lq.apps.googleusercontent.com"; 
 
 function App() {
   return (
